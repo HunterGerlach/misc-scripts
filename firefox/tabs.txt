@@ -1,0 +1,23 @@
+# Add Tree Style Tabs Entension Add-On to Firefox
+# Open the Settings Menu
+# Open Help
+# Click Troubleshooting Information
+# Click Open Directory in the Profile Directory
+# mkdir chrome
+# vim userChrome.css
+# Add following CSS:
+```
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* to hide the native tabs */
+#TabsToolbar {
+    visibility: collapse;
+}
+
+/* to hide the sidebar header */
+#sidebar-header {
+    visibility: collapse;
+}
+```
+# Exit vim
+# Restart Firefox
